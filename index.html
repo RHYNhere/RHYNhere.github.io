@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sebastian Scheibler</title>
+<meta name="description" content="Games and software engineering portfolio.">
+<link rel="preload" href="fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0e1417">
+
+<!-- Link previews (LinkedIn, Slack, messengers). og:url and og:image must be
+     absolute URLs, because those services fetch them from outside. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sebastian Scheibler">
+<meta property="og:description" content="Games and software engineering portfolio.">
+<meta property="og:url" content="https://rhynhere.github.io/">
+<meta property="og:image" content="https://rhynhere.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sebastian Scheibler: game developer and software engineer">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>Sebastian Scheibler</h1>
+    <p class="tagline">
+      <span>Game developer and software engineer with a B.Sc. in Games Engineering.</span>
+      <span>3+ years of building production software at startups.</span>
+      <span>Currently developing a game of my own.</span>
+    </p>
+    <ul class="hero-links">
+      <li class="email-group">
+        <a class="button primary" href="mailto:sebastian.scheibler.dev@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          Email
+        </a>
+        <!-- For visitors whose system has no mail app set up, mailto: does
+             nothing, so they can copy the address instead. Hidden until the
+             script runs, because without JavaScript it could not work. -->
+        <button class="button copy" type="button" aria-label="Copy email address" title="Copy email address" hidden>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+        </button>
+        <span class="visually-hidden" role="status" id="copy-status"></span>
+      </li>
+      <li>
+        <a class="button" href="https://github.com/RHYNhere">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a class="button" href="https://www.linkedin.com/in/sebastian-scheibler-524455251/">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<nav class="tabbar" aria-label="Sections">
+  <div class="container tabs" id="tabs">
+    <a href="#profile" data-tab="profile">Profile</a>
+    <a href="#games" data-tab="games">Games</a>
+    <a href="#software" data-tab="software">Software &amp; Systems</a>
+  </div>
+</nav>
+
+<main class="container">
+
+<!-- ===================== PROFILE ===================== -->
+<section id="profile" class="tab-panel">
+  <div class="profile-grid">
+
+    <div class="profile-main">
+      <article class="block">
+        <h2>About</h2>
+        <p>
+          I studied games engineering and then spent over three years building
+          production software at startups, moving from AI-focused fullstack work
+          into data engineering. Alongside that I have kept working on games,
+          and I am currently developing one for commercial release.
+        </p>
+      </article>
+
+      <article class="block">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li class="current">
+            <span class="role">Co-founder, Game Developer</span>
+            <span class="where">Manifest Games GbR · since 09/2025</span>
+            <span class="what">Development of the first release "Appointed" as a solo developer, with some task-based aid and feedback from the other co-founders.</span>
+          </li>
+          <li>
+            <span class="role">Data Engineer</span>
+            <span class="where">EV Levels GmbH · 04/2026 – 08/2026</span>
+            <span class="what">Analysis, dashboards, pipelines, data modelling. Mostly Python-based.</span>
+          </li>
+          <li>
+            <span class="role">Fullstack Developer</span>
+            <span class="where">vAudience GmbH · 09/2024 – 03/2026</span>
+            <span class="what">Focus on AI integration, prompting and evaluation, RAG pipelines, benchmarking, customer consulting.</span>
+          </li>
+          <li>
+            <span class="role">Working Student, Software Development</span>
+            <span class="where">MicroNova GmbH · 01/2023 – 07/2024</span>
+            <span class="what">Python (Flask)-based web app development, database and server management, CRM plugin development.</span>
+          </li>
+        </ol>
+      </article>
+    </div>
+
+    <aside class="profile-side">
+      <div class="side-card">
+        <h2>Education</h2>
+        <p class="side-title">B.Sc. Games Engineering</p>
+        <p class="meta">
+          Julius-Maximilians-Universität Würzburg
+        </p>
+      </div>
+
+      <div class="side-card">
+        <h2>Location</h2>
+        <p class="meta">Aschaffenburg am Main, Germany</p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ===================== GAMES ===================== -->
+<section id="games" class="tab-panel" hidden>
+  <div class="card-grid">
+
+    <article class="card featured">
+      <!-- muted is required for autoplay; playsinline stops iOS from opening
+           the video full screen. Without autoplay the poster frame shows. -->
+      <figure class="media media-video">
+        <video src="images/appointed-flag-loop.mp4" poster="images/appointed-flag-poster.jpg"
+               autoplay muted loop playsinline preload="metadata"
+               aria-label="The flag of Paládia waving on a CRT screen"></video>
+      </figure>
+      <div class="card-body">
+        <p class="kicker">Current project <span class="badge">in development</span></p>
+        <h2>Appointed</h2>
+        <ul class="tags">
+          <li>Godot</li><li>GDScript</li><li class="skill">Game design</li><li class="skill">Level design</li><li class="skill">Narrative design</li>
+        </ul>
+        <p>
+          A first-person game set in Paládia, a technocratic meritocracy.
+          The player works mundane jobs that the state broadcasts as critical
+          service: mining, farming, cleaning, paperwork. The working equipment is both
+          tool and weapon.
+        </p>
+        <p>
+          The story follows a four-part Kishōtenketsu structure with a strong satirical undertone.
+          Tension builds by accumulation, and a late
+          turn reframes everything before it. A questionnaire after each level
+          records the player's answers and decides which ending they reach.
+        </p>
+        <p class="meta">Commercial release planned on Steam via Manifest Games GbR.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="gallery">
+        <figure class="media diagram"><img src="images/sweet-syndicate-outer-loop.jpg" alt="Diagram of the weekly outer loop: workdays, the works council vote and optional free days all feed into consequences for the workplace, gameplay mechanics, NPC relationships and the balance of power, which shape the next workdays" loading="lazy"></figure>
+        <ul class="thumbs">
+          <li><a href="images/sweet-syndicate-outer-loop.jpg" aria-current="true"><img src="images/sweet-syndicate-outer-loop.jpg" alt="Diagram of the weekly outer loop: workdays, the works council vote and optional free days all feed into consequences for the workplace, gameplay mechanics, NPC relationships and the balance of power, which shape the next workdays" loading="lazy"></a></li>
+          <li><a href="images/sweet-syndicate-core-loop.jpg"><img src="images/sweet-syndicate-core-loop.jpg" alt="Diagram of the daily core loop: arrival, first work phase, break, second work phase, end of the working day, and back to arrival" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <p class="kicker">Game concept · 2025</p>
+        <h2>Sweet Syndicate</h2>
+        <ul class="tags">
+          <li class="skill">Systems design</li><li class="skill">Narrative design</li><li class="skill">Market analysis</li>
+        </ul>
+        <p>
+          A narrative isometric RPG about a sugar refinery during the industrial
+          age of a fictional universe. Where workplace simulations usually make you the boss, here you
+          are one worker among many, and progress is collective rather than personal.
+        </p>
+        <p>
+          Written as a fifteen-page high concept for a funding application:
+          core loop, design pillars, cast, audience, age rating, competitive
+          analysis against Disco Elysium, Papers Please, Suzerain, Frostpunk and
+          Citizen Sleeper, and a development plan.
+        </p>
+        <p class="links"><a href="docs/sweet-syndicate-high-concept.pdf" hreflang="de">Read the high concept (PDF, German) →</a></p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="gallery">
+        <figure class="media"><img src="images/questbased1.jpg" alt="Two generated environments side by side: a forest below a hilltop village, and a barren slope with dead trees and wooden scaffolds" loading="lazy"></figure>
+        <ul class="thumbs">
+          <li><a href="images/questbased1.jpg" aria-current="true"><img src="images/questbased1.jpg" alt="Two generated environments side by side: a forest below a hilltop village, and a barren slope with dead trees and wooden scaffolds" loading="lazy"></a></li>
+          <li><a href="images/questbased2.jpg"><img src="images/questbased2.jpg" alt="A generated region with wooden houses, tall grass and a palm forest" loading="lazy"></a></li>
+          <li><a href="images/questbased3.jpg"><img src="images/questbased3.jpg" alt="A generated village area with a thatched cottage, palm trees and flower meadows" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <p class="kicker">B.Sc. thesis · 2024</p>
+        <h2>Generation and adaption of quest-based virtual environments</h2>
+        <ul class="tags">
+          <li>Unity</li><li>C#</li><li>Python</li><li class="skill">Procedural generation</li><li class="skill">LLM integration</li>
+        </ul>
+        <p>
+          Procedural generation of game environments shaped by quest structure.
+          An LLM produces a structured description of the intended environment:
+          regions, points of interest, NPCs and narrative framing. The generator
+          parses it and builds a terrain to match, partitioning the map into
+          regions with a Voronoi diagram, generating a heightmap and then placing
+          objects by rule.
+        </p>
+        <p class="card-foot">
+          <span class="meta">~2,300 lines of C#</span>
+          <a href="https://github.com/RHYNhere/quest-based-environments">Source on GitHub →</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="gallery">
+        <figure class="media"><img src="images/spectrum-1.jpg" alt="Spectrum: the player character on a snow field facing a group of red, fanged creatures" loading="lazy"></figure>
+        <ul class="thumbs">
+          <li><a href="images/spectrum-1.jpg" aria-current="true"><img src="images/spectrum-1.jpg" alt="Spectrum: the player character on a snow field facing a group of red, fanged creatures" loading="lazy"></a></li>
+          <li><a href="images/spectrum-2.jpg"><img src="images/spectrum-2.jpg" alt="Spectrum: the player firing a projectile at creatures on an icy water surface next to a rock wall" loading="lazy"></a></li>
+          <li><a href="images/spectrum-3.jpg"><img src="images/spectrum-3.jpg" alt="Spectrum: the player facing a large swarm of creatures on a snow field" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <p class="kicker">Game engine and demo game · 2024</p>
+        <h2>Technocracy &amp; Spectrum</h2>
+        <ul class="tags">
+          <li>C++</li><li>OpenGL</li><li>Box2D</li><li class="skill">Engine programming</li>
+        </ul>
+        <p>
+          A 2D game engine in C++ and Spectrum, a game built on top of it. The
+          engine covers sprite rendering, animation, sound, input and an event
+          system in about 4,250 lines; Spectrum adds another 2,150. The layer
+          stack, event dispatching and application loop follow TheCherno's Hazel
+          series, adapted to fit the libraries I used. The game is entirely my
+          own work.
+        </p>
+        <p class="card-foot">
+          <span class="meta">~6,400 lines</span>
+          <a href="https://github.com/RHYNhere/technocracy">Source on GitHub →</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="gallery">
+        <figure class="media"><img src="images/detec2d-2.png" alt="Top-down test level: an agent's yellow vision cone sweeping the room" loading="lazy"></figure>
+        <ul class="thumbs">
+          <li><a href="images/detec2d-2.png" aria-current="true"><img src="images/detec2d-2.png" alt="Top-down test level: an agent's yellow vision cone sweeping the room" loading="lazy"></a></li>
+          <li><a href="images/detec2d-4.png"><img src="images/detec2d-4.png" alt="Top-down test level: a purple sound radius around a noise source" loading="lazy"></a></li>
+          <li><a href="images/detec2d-3.png"><img src="images/detec2d-3.png" alt="Custom inspector of the Sound Creation script with range, audio clips, refresh rate and line settings" loading="lazy"></a></li>
+          <li><a href="images/detec2d-1.png"><img src="images/detec2d-1.png" alt="Editor gizmo of an agent: vision cone drawn inside its detection range circle" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <p class="kicker">Unity engine tool · 2023</p>
+        <h2>detec2d</h2>
+        <ul class="tags">
+          <li>Unity</li><li>C#</li><li class="skill">Game AI</li><li class="skill">Editor tooling</li>
+        </ul>
+        <p>
+          A 2D detection system for Unity in which agents perceive the player
+          through vision and sound. Agents react through an interface instead of
+          direct references, so any object can become a detection target, and
+          detection events go through an event manager rather than agents polling
+          each other every frame.
+        </p>
+        <p>
+          Custom inspectors make the vision cone and sound radius editable and
+          visible in the editor, so a designer can tune the system without
+          touching code.
+        </p>
+        <p class="card-foot">
+          <span class="meta">~1,300 lines across 14 scripts</span>
+          <a href="https://github.com/RHYNhere/detec2d">Source on GitHub →</a>
+        </p>
+      </div>
+    </article>
+    <article class="card compact">
+      <div class="gallery">
+        <figure class="media"><img src="images/delighted1.jpg" alt="Title screen with a neon synthwave logo above a glowing grid floor" loading="lazy"></figure>
+        <ul class="thumbs">
+          <li><a href="images/delighted1.jpg" aria-current="true"><img src="images/delighted1.jpg" alt="Title screen with a neon synthwave logo above a glowing grid floor" loading="lazy"></a></li>
+          <li><a href="images/delighted2.jpg"><img src="images/delighted2.jpg" alt="A car racing along a neon track past a billboard" loading="lazy"></a></li>
+          <li><a href="images/delighted3.jpg"><img src="images/delighted3.jpg" alt="A car driving down a glowing straight towards a direction sign" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <p class="kicker">Student demo game · 2020</p>
+        <h2>Delighted</h2>
+        <ul class="tags">
+          <li>Unity</li><li>C#</li><li class="skill">Gameplay programming</li>
+        </ul>
+        <p>
+          An arcade racer with a neon synthwave look. While steering, the player
+          aims with the mouse and shoots objects along the track. Every hit makes
+          an object light up, and some of them trigger an effect when they do.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== SOFTWARE ===================== -->
+<section id="software" class="tab-panel" hidden>
+  <div class="card-grid">
+
+    <article class="card">
+      <figure class="media"><img src="images/grafana.png" alt="Grafana dashboard of the home server: uptime, load, disk and memory gauges, plus network, CPU and memory usage per container for Nextcloud, Collabora, Navidrome, Syncthing and the monitoring stack" loading="lazy"></figure>
+      <div class="card-body">
+        <p class="kicker">Homelab</p>
+        <h2>Home Infrastructure</h2>
+        <ul class="tags">
+          <li>Ubuntu Server</li><li>Docker Compose</li><li>Ansible</li><li>Tailscale</li><li class="skill">Infrastructure as code</li>
+        </ul>
+        <p>
+          A self-hosted server running Nextcloud with Collabora, Navidrome,
+          Syncthing, Pi-hole as the network's DNS and a Prometheus and Grafana
+          monitoring stack, with CrowdSec as the intrusion prevention layer.
+        </p>
+        <p>
+          Managed entirely as code: every compose file and service unit lives in
+          an Ansible repository on my workstation and is deployed from there, so
+          the server holds no configuration that is not reproducible. Every web
+          interface binds only to the Tailscale interface; the one port open to
+          the local network is Pi-hole's DNS, which the devices there need.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="gallery">
+        <figure class="media"><img src="images/manifest-site-1.png" alt="Home page of the Manifest Games website: a framed hero styled as a state questionnaire, headed You have been selected, next to the flag of Paládia on a CRT screen" loading="lazy"></figure>
+        <ul class="thumbs">
+          <li><a href="images/manifest-site-1.png" aria-current="true"><img src="images/manifest-site-1.png" alt="Home page of the Manifest Games website: a framed hero styled as a state questionnaire, headed You have been selected, next to the flag of Paládia on a CRT screen" loading="lazy"></a></li>
+          <li><a href="images/manifest-site-2.png"><img src="images/manifest-site-2.png" alt="The same home page on a phone, with the hero text stacked above the flag" loading="lazy"></a></li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <p class="kicker">Web</p>
+        <h2>Manifest Games Studio Site</h2>
+        <ul class="tags">
+          <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li class="skill">Frontend development</li>
+        </ul>
+        <p>
+          The studio website and home of Appointed. Bilingual English and German,
+          content authored in MDX so posts and game pages are written as content
+          rather than as components.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<!-- Lightbox for enlarged screenshots. <dialog> brings the overlay, Esc to
+     close and focus handling for free. -->
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+  <img alt="">
+  <button class="lightbox-close" type="button" aria-label="Close">×</button>
+</dialog>
+
+<footer>
+  <div class="container footer-row">
+    <p>© <span id="year">2026</span> Sebastian Scheibler</p>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="datenschutz.html">Datenschutz / Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// Tabs. Without JavaScript every section stays visible, so the page still
+// works as one long document rather than showing nothing.
+(function () {
+  var nav = document.getElementById('tabs');
+  var links = nav.querySelectorAll('a');
+  var panels = document.querySelectorAll('.tab-panel');
+
+  function show(name, animate) {
+    panels.forEach(function (p) {
+      p.hidden = (p.id !== name);
+      p.classList.toggle('entering', !!animate && !p.hidden);
+    });
+    links.forEach(function (l) {
+      var on = l.dataset.tab === name;
+      l.classList.toggle('active', on);
+      if (on) l.setAttribute('aria-current', 'page'); else l.removeAttribute('aria-current');
+    });
+  }
+
+  links.forEach(function (l) {
+    l.addEventListener('click', function (e) {
+      e.preventDefault();
+      show(l.dataset.tab, true);
+      history.replaceState(null, '', '#' + l.dataset.tab);
+    });
+  });
+
+  // Deep links such as /#software open on that tab.
+  var start = location.hash.replace('#', '');
+  show(['profile', 'games', 'software'].indexOf(start) > -1 ? start : 'profile');
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Visitors who asked their system for less motion get the poster frame
+  // instead of a looping video.
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach(function (v) {
+      v.removeAttribute('autoplay');
+      v.pause();
+    });
+  }
+
+  // Copy button next to Email. The address comes from the mailto link, so it
+  // only has to be changed in one place.
+  var copyBtn = document.querySelector('.button.copy');
+  var mailLink = document.querySelector('.email-group a[href^="mailto:"]');
+  var copyStatus = document.getElementById('copy-status');
+  if (copyBtn && mailLink && navigator.clipboard) {
+    var address = mailLink.getAttribute('href').replace('mailto:', '');
+    copyBtn.hidden = false;
+    copyBtn.parentElement.classList.add('split');
+    copyBtn.addEventListener('click', function () {
+      navigator.clipboard.writeText(address).then(function () {
+        copyBtn.classList.add('copied');
+        copyStatus.textContent = 'Email address copied';
+        setTimeout(function () {
+          copyBtn.classList.remove('copied');
+          copyStatus.textContent = '';
+        }, 1800);
+      });
+    });
+  }
+
+  // A click (or Enter/Space) on the looping video pauses or resumes it, so
+  // nobody is stuck with motion they did not ask for.
+  document.querySelectorAll('.media-video video').forEach(function (v) {
+    v.tabIndex = 0;
+    v.title = 'Click to pause or play';
+    function toggle() { if (v.paused) { v.play(); } else { v.pause(); } }
+    v.addEventListener('click', toggle);
+    v.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  });
+
+  // Galleries: a thumbnail swaps the main image. Without JavaScript each
+  // thumbnail is a plain link to the image file.
+  document.querySelectorAll('.gallery').forEach(function (g) {
+    var main = g.querySelector('.media img');
+    var thumbs = g.querySelectorAll('.thumbs a');
+    thumbs.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        main.src = a.getAttribute('href');
+        main.alt = a.querySelector('img').alt;
+        thumbs.forEach(function (t) { t.removeAttribute('aria-current'); });
+        a.setAttribute('aria-current', 'true');
+      });
+    });
+  });
+
+  // Lightbox: clicking a screenshot (or Enter on it) opens it large.
+  var box = document.getElementById('lightbox');
+  var boxImg = box.querySelector('img');
+
+  function enlarge(img) {
+    boxImg.src = img.src;
+    boxImg.alt = img.alt;
+    // Small sources (the detec2d panels are 144 px tall) would open smaller
+    // than they look in the card, so scale them up to a readable size.
+    var target = Math.min(window.innerHeight * 0.6, img.naturalHeight * 4);
+    boxImg.style.height = img.naturalHeight < target ? target + 'px' : '';
+    box.showModal();
+  }
+
+  document.querySelectorAll('.media img').forEach(function (img) {
+    img.tabIndex = 0;
+    img.addEventListener('click', function () { enlarge(img); });
+    img.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); enlarge(img); }
+    });
+  });
+
+  // Any click inside the open dialog closes it, the image included.
+  box.addEventListener('click', function () { box.close(); });
+})();
+</script>
+
+</body>
+</html>

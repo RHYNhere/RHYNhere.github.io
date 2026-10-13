@@ -1,0 +1,9 @@
+# Editor and OS clutter
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Pages that are not ready to publish
+_drafts/
