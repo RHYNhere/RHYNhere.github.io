@@ -33,20 +33,22 @@
 /* ---------- tokens ---------- */
 
 :root {
-  --bg:          #f5f7f7;
+  --bg:          #f7f5fb;
   --surface:     #ffffff;
-  --surface-2:   #edf1f1;
-  --text:        #141a1d;
-  --muted:       #5a666c;
-  --line:        #dce2e3;
-  --accent:      #0b7266;
-  --accent-bg:   #dff2ee;
-  --shadow:      0 10px 30px -12px rgb(16 40 40 / 0.22);
+  --surface-2:   #f0ecf7;
+  --text:        #18141f;
+  --muted:       #615a6e;
+  --line:        #e3dcee;
+  --accent:      #6d28d9;
+  --accent-bg:   #efe7fd;
+  --shadow:      0 10px 30px -12px rgb(60 20 110 / 0.25);
 
-  --hero-bg:     #0e1417;
-  --hero-text:   #eef4f4;
-  --hero-muted:  #9fb0b4;
-  --hero-accent: #4fd1bf;
+  --hero-bg:     #0f0a1f;
+  --hero-text:   #f3effa;
+  --hero-muted:  #b4a9c9;
+  --hero-accent: #a78bfa;
+  --button:      #7c3aed;
+  --button-hover:#8b5cf6;
   --hero-line:   rgb(255 255 255 / 0.14);
 
   --font-body:    system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -57,16 +59,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg:        #0c1012;
-    --surface:   #141a1d;
-    --surface-2: #1b2327;
-    --text:      #e5ecee;
-    --muted:     #93a1a7;
-    --line:      #263035;
-    --accent:    #4fd1bf;
-    --accent-bg: #10302c;
+    --bg:        #0d0a14;
+    --surface:   #161220;
+    --surface-2: #1e1929;
+    --text:      #ece7f5;
+    --muted:     #a49bb6;
+    --line:      #2b2439;
+    --accent:    #b197fc;
+    --accent-bg: #2a1f45;
     --shadow:    0 14px 34px -14px rgb(0 0 0 / 0.7);
-    --hero-bg:   #080c0e;
+    --hero-bg:   #0a0714;
   }
 }
 
@@ -117,8 +119,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(38rem 24rem at 85% 10%, rgb(79 209 191 / 0.20), transparent 70%),
-    radial-gradient(30rem 20rem at 0% 100%, rgb(79 140 209 / 0.14), transparent 70%);
+    radial-gradient(42rem 28rem at 88% 0%, rgb(168 85 247 / 0.45), transparent 65%),
+    radial-gradient(36rem 24rem at 8% 110%, rgb(236 72 153 / 0.30), transparent 65%),
+    radial-gradient(30rem 18rem at 45% 55%, rgb(99 102 241 / 0.16), transparent 70%);
   pointer-events: none;
 }
 
@@ -142,6 +145,10 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.035em;
+  background: linear-gradient(90deg, #f3effa 0%, #e9d5ff 45%, #f0abfc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .tagline {
@@ -210,15 +217,15 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 
 .email-group.split .button.copy {
   border: 0;
-  border-left: 1px solid rgb(6 36 32 / 0.3);
+  border-left: 1px solid rgb(255 255 255 / 0.35);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  background: var(--hero-accent);
-  color: #062420;
+  background: var(--button);
+  color: #fff;
 }
 
 .email-group.split .button.copy:hover,
-.email-group.split .button.copy.copied { background: #6fe0d0; }
+.email-group.split .button.copy.copied { background: var(--button-hover); }
 
 /* The lift on hover would shift one half against the other. */
 .email-group.split .button:hover { transform: none; }
@@ -234,7 +241,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   padding: 0.15rem 0.55rem;
   border-radius: 6px;
   background: var(--hero-accent);
-  color: #062420;
+  color: #1a0b33;
   font-size: 0.75rem;
   font-weight: 600;
   white-space: nowrap;
@@ -254,12 +261,12 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 
 .button.primary {
   border-color: transparent;
-  background: var(--hero-accent);
-  color: #062420;
+  background: var(--button);
+  color: #fff;
   font-weight: 600;
 }
 
-.button.primary:hover { background: #6fe0d0; }
+.button.primary:hover { background: var(--button-hover); }
 
 /* ---------- tab bar ---------- */
 
