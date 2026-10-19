@@ -523,6 +523,7 @@ main.container { padding-top: 3rem; padding-bottom: 5rem; }
 }
 
 .links { margin-top: auto !important; }
+.links a + a { margin-left: 1.5rem; }
 .links a, .card-foot a { font-weight: 600; text-decoration: none; }
 .links a:hover, .card-foot a:hover { text-decoration: underline; }
 
