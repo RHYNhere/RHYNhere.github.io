@@ -550,17 +550,12 @@ main.container { padding-top: 3rem; padding-bottom: 5rem; }
 /* Lead project spans the full row, media beside the text on wide screens. */
 .card.featured { grid-column: 1 / -1; }
 
-/* Minor project: a full-width row, gallery beside the text on wide screens. */
-.card.compact { grid-column: 1 / -1; }
-
 @media (min-width: 56rem) {
   .card.featured { display: grid; grid-template-columns: 1.15fr 1fr; }
   .card.featured > .media { aspect-ratio: auto; min-height: 22rem; border-bottom: 0; border-right: 1px solid var(--line); }
   .card.featured .card-body { padding: 2rem 2rem 1.8rem; }
   .card.featured h2 { font-size: 2rem; }
 
-  .card.compact { display: grid; grid-template-columns: minmax(0, 24rem) 1fr; }
-  .card.compact > .gallery { padding-bottom: 1rem; border-right: 1px solid var(--line); }
 }
 
 /* The flag loop has a pure black CRT frame, so the slot matches it and the
